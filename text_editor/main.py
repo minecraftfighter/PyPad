@@ -3,7 +3,7 @@ from tkinter import messagebox
 from tkinter import filedialog
 
 root = tk.Tk()
-root.geometry("500x400")
+root.geometry("900x800")
 root.title("PyPad")
 root.call('source', 'Azure/azure.tcl')
 root.call('set_theme', 'dark')
@@ -57,3 +57,4 @@ out = tk.Text(root, height=6, font=('Arial', 15))
 out.pack(padx=12, pady=12)
 
 root.mainloop()
+
