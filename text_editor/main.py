@@ -54,7 +54,8 @@ label = tk.Label(root, text="PyPad", font=('Arial', 15))
 label.pack(padx=10, pady=10)
 
 out = tk.Text(root, height=6, font=('Arial', 15))
-out.pack(padx=12, pady=12)
+out.pack(padx=12, pady=12, fill="both", expand=True)
 
 root.mainloop()
+
 
