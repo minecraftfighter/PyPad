@@ -1,2 +1,2 @@
 # PyPad
-A notepad replacement made whit python tkinter.
+A notepad replacement made with python tkinter.
