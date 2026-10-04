@@ -52,12 +52,15 @@ def li():
 
 def opa():
     dialog = opacityS(root, "Opacity Selector")
-    print(dialog.result)
     alpha = dialog.result / 100
-    root.attributes("-alpha", alpha)
+    if alpha <= 10:
+        root.attributes("-alpha", 100)
+        messagebox.showerror("Error", "Opacity too low.")
+    else:
+        root.attributes("-alpha", alpha)
 
 def msg():
-    messagebox.showinfo("HELP", "Enter the things you want to save.")
+    messagebox.showinfo("HELP", "This is a text editor use it like a text editor.")
 
 
 menuu = tk.Menu(root)
