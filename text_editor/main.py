@@ -76,9 +76,6 @@ vis_men.add_command(label="Light", command=li)
 vis_men.add_command(label="Opacity", command=opa)
 he_men.add_command(label="Help", command=msg)
 
-label = tk.Label(root, text="PyPad", font=('Arial', 15))
-label.pack(padx=10, pady=10)
-
 out = tk.Text(root, height=6, font=('Arial', 15), bg="gray")
 out.pack(padx=12, pady=12, fill="both", expand=True)
 
