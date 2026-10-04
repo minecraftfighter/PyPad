@@ -37,7 +37,7 @@ def load_file():
 
 def save():
 
-    filename = filedialog.asksaveasfilename(filetypes=(("Text Document", "*.txt"), ("All Files", "*.*")))
+    filename = filedialog.asksaveasfilename(filetypes=(("Text Document", "*.txt"), ("All Files", "*.*")), defaultextension=".txt")
     if filename != "":
         tw = out.get('1.0', 'end-1c')
         file = open(filename, 'w')
